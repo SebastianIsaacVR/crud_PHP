@@ -27,7 +27,7 @@ if (pg_query($conn,$query)){
   Id: <input type="number" name="identificador" id="" value="<?= $row['column1'] ?>" readonly><br>
   Nombre: <input type="text" name="nombre" id="" value="<?= $row['column2'] ?>"><br>
   Fecha: <input type="date" name="fecha" id="" value="<?= $row['column3'] ?>"><br>
-  Numero: <input type="double" name="numero" id="" value="<?= $row['column4'] ?>"><br> 
+  Numero: <input type="number" name="numero" id="" value="<?= $row['column4'] ?>"><br> 
   Num.Double: <input type="number" name="numdouble" id="" value="<?= $row['column5'] ?>"><br>
   <br>
   <input type="submit" value="Modificar"><br> 
