@@ -17,15 +17,13 @@ $query="DELETE FROM table1 WHERE column1=$id;";
 $conn = @pg_connect("host=$servername port=$port dbname=$dbname user=$username password=$password");
 // Check connection
 if (!$conn) {
-  die("Connection failed: " . $conn->connect_error);
+  die("Connection failed");
 }
 
 if (pg_query($conn,$query)){
     header("location:crud.php");
 }else{
-    echo "Algo salio mal <a href='https://localhost/crud/crud.php'> clic aqui para volver al crud</a>" ;
+    echo "Algo salio mal <a href='https://localhost/crud_prostgress/crud.php'> clic aqui para volver al crud</a>" ;
 
 }
-
-
 ?>

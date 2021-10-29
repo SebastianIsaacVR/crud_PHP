@@ -54,7 +54,7 @@ pg_close($conn);
   Nombre: <input type="text" name="nombre" id="" value="Humberto" class="w3-input"><br>
   Fecha: <input type="date" name="fecha" id="" value="1975-06-23"><br>
   Numero: <input type="number" name="numero" id="" value=""><br> 
-  Num.Double: <input type="number" name="numdouble" id="" value=""><br>
+  Num.Double: <input type="double" name="numdouble" id="" value=""><br>
   <br>
   <input type="submit" value="Aceptar"><br> 
 </fieldset>
