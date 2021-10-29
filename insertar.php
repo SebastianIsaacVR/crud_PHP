@@ -18,18 +18,19 @@ $query="INSERT INTO table1 (column1, column2, column3, column4, column5) VALUES 
 //echo $query;
 
 
-
 // Create connection
 $conn = @pg_connect("host=$servername port=$port dbname=$dbname user=$username password=$password");
 // Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
+if (!$conn) {
+  die("Connection failed");
 }
 
-if ( $conn->query($query)== TRUE){
+if ( pg_query($conn,$query)== TRUE){
     header("location:crud.php");
 }else{
     echo "Algo salio mal <a href='https://localhost/crud_postgress/crud.php'> clic aqui para volver al crud</a>" ;
+
 }
+
 
 ?>
