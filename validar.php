@@ -26,9 +26,10 @@ if (pg_num_rows($result) > 0) {
   $row = pg_fetch_assoc($result);
  // echo "Acceso de usuario validado, redirigiendo a la pagina principal.";
   session_start();
-  $_SESSION["nombre"] = $row["nombre"];
-  $_SESSION["apellido1"] = $row["apellido1"];
-  $_SESSION["apellido2"] = $row["apellido2"];
+  session_start();
+  $_SESSION["nombre"] = $row["employeefirstname"];
+  $_SESSION["apellido1"] = $row["employeelastname1"];
+  $_SESSION["apellido2"] = $row["employeelastname2"];
   header("location: crud.php");
 
 } else {
