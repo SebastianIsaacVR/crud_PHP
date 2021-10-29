@@ -1,12 +1,6 @@
 <?php
 include("./inc/settings.php");
 validar();
-/*print_r ($_POST)."<br>";
-echo $_POST ['identificador']."<br>\n";
-echo $_POST ['nombre']."<br>\n";
-echo $_POST ['fecha']."<br>\n";
-echo $_POST ['numero']."<br>\n";
-echo $_POST ['numdouble']."<br>\n";*/
 
 $identificador=$_POST ['identificador'];
 $nombre=$_POST ['nombre'];
@@ -29,8 +23,6 @@ if ( pg_query($conn,$query)== TRUE){
     header("location:crud.php");
 }else{
     echo "Algo salio mal <a href='https://localhost/crud_postgress/crud.php'> clic aqui para volver al crud</a>" ;
-
 }
-
 
 ?>

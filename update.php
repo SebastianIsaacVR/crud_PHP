@@ -3,19 +3,6 @@ include("./inc/settings.php");
 validar();
 ?>
 <?php
-/*
-echo $_POST ['identificador']."<br>\n";
-echo $_POST ['nombre']."<br>\n";
-echo $_POST ['fecha']."<br>\n";
-echo $_POST ['numero']."<br>\n";
-echo $_POST ['numdouble']."<br>\n";
-
-$identificador=$_POST ['identificador'];
-$nombre=$_POST ['nombre'];
-$fecha=$_POST ['fecha'];
-$numero=$_POST ['numero'];  
-$numdouble=$_POST ['numdouble'];
-*/
 
 $query="SELECT column1, column2, column3, column4, column5 FROM table1 WHERE column1 = ".$_GET['colum1'].";";
 
