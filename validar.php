@@ -2,7 +2,7 @@
 include("./inc/settings.php");
 //print_r($_POST);
 //$query="SELECT * FROM usuario WHERE employeeid = '$_POST[username]' AND employeepassword = md5('$_POST[pwd]')";
-$query="SELECT * FROM usuarios WHERE numero_de_empleado = '$_POST[username]' AND pass= md5('$_POST[pwd]')";
+$query="SELECT * FROM usuario WHERE employeeid = '$_POST[username]' AND employeepassword= '$_POST[pwd]'";
 echo $query;
 
 
