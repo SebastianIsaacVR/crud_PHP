@@ -32,7 +32,7 @@ if (pg_num_rows($result) > 0) {
 } else {
   echo "Se detecto un acceso ilegal al sistema, su ip esta siendo monitoreada y sera enviada a la policia";
   ?>
-  <a href="index.php">Sitio de login</a>
+  <a href="logout.php">Sitio de login</a>
   <?php
 }
 pg_close($conn);
