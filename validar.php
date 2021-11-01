@@ -20,9 +20,9 @@ $result = pg_query($conn,$query) or die("Ocurrio un error".pg_last_error($conn))
 
 if (pg_num_rows($result) > 0) {
   
-  // output data of each row
+  
   $row = pg_fetch_assoc($result);
- // echo "Acceso de usuario validado, redirigiendo a la pagina principal.";
+ 
   session_start();
   $_SESSION["nombre"] = $row["employeefirstname"];
   $_SESSION["apellido1"] = $row["employeelastname1"];
@@ -32,7 +32,7 @@ if (pg_num_rows($result) > 0) {
 } else {
   echo "Se detecto un acceso ilegal al sistema, su ip esta siendo monitoreada y sera enviada a la policia";
   ?>
-  <a href="">Sitio de login</a>
+  <a href="logout.php">Sitio de login</a>
   <?php
 }
 pg_close($conn);
