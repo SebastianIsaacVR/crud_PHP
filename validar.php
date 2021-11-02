@@ -18,7 +18,7 @@ if (!$conn) {
 
 $result = pg_query($conn,$query) or die("Ocurrio un error".pg_last_error($conn));
 
-if (pg_num_rows($result) > 0) {
+if (pg_num_rows($result) == 1) {
   
   
   $row = pg_fetch_assoc($result);
