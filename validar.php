@@ -13,8 +13,7 @@ $conn = @pg_connect("host=$servername port=$port dbname=$dbname user=$username p
 if (!$conn) {
   die("Conexion fallida: ");
 }else{
- 
-  echo "Conexion exitosa";
+  echo "Conexion exitosa: ";
 }
 
 $result = pg_query($conn,$query) or die("Ocurrio un error".pg_last_error($conn));
