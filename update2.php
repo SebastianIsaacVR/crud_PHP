@@ -13,7 +13,7 @@ if (!$conn) {
   die("Connection failed: ");
 }
 
-if ( pg_query($conn,$query)){
+if ( $pg_query($conn,$query)){
     header("location:crud.php");
     
 }else{
