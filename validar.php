@@ -11,9 +11,10 @@ $query="SELECT * FROM usuario WHERE employeeid = '$_POST[username]' AND employee
 $conn = @pg_connect("host=$servername port=$port dbname=$dbname user=$username password=$password");
 // Check connection
 if (!$conn) {
-  echo "Conexion exitosa";
-}else{
   die("Conexion fallida: ");
+}else{
+ 
+  echo "Conexion exitosa";
 }
 
 $result = pg_query($conn,$query) or die("Ocurrio un error".pg_last_error($conn));
