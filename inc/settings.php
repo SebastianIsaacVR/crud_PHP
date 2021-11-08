@@ -11,7 +11,7 @@ if (empty($_SESSION["nombre"]))
 {
 echo "Se detecto un acceso ilegal al sistema, su ip esta siendo monitoreada y sera enviada a la policia";
 ?>
-<a href="http://localhost/crud_postgres/">Sitio de login</a>
+<a href="logout.php">Sitio de login</a>
 <?php
 exit();
 }
