@@ -23,7 +23,7 @@ if (!$conn) {
 if (pg_query($conn,$query)){
     header("location:crud.php");
 }else{
-    echo "Algo salio mal <a href='https://localhost/crud_prostgress/crud.php'> clic aqui para volver al crud</a>" ;
+    echo "Algo salio mal <a href='crud.php'> clic aqui para volver al crud</a>" ;
 
 }
 ?>
